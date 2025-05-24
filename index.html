@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grid Layout</title>
+  <link rel="stylesheet" href="bootstrap-5.3.6-dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #111;
+    }
+    .container-box {
+      width: 800px;
+      height: 300px;
+      margin: 100px auto;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: 4px;
+      background-color: #fff;
+      padding: 4px;
+    }
+
+    .box {
+      border: 1px solid #fff;
+    }
+
+    .yellow { background-color: #ffecb3; }
+    .red { background-color: #ff6f61; }
+    .green { background-color: #8fd3c9; }
+    .orange { background-color: #ffc65c; }
+
+    
+    .box1 { grid-column: 1 / span 4; grid-row: 1 / span 1; } 
+    .box2 { grid-column: 1 / span 3; grid-row: 2 / span 1; } 
+    .box3 { grid-column: 4 / span 2; grid-row: 2 / span 2; } 
+    .box4 { grid-column: 1 / span 1; grid-row: 3 / span 1; } 
+    .box5 { grid-column: 2 / span 1; grid-row: 3 / span 1; } 
+    .box6 { grid-column: 3 / span 1; grid-row: 3 / span 1; } 
+    .box7 { grid-column: 5 / span 2; grid-row: 1 / span 2; } 
+    .box8 { grid-column: 5 / span 2; grid-row: 3 / span 1; } 
+    .box9 { grid-column: 2 / span 1; grid-row: 2 / span 1; display: none; } 
+  </style>
+</head>
+<body>
+    <div class="container-box">
+    <div class="box box1 yellow"></div>
+    <div class="box box2 red"></div>
+    <div class="box box3 green"></div>
+    <div class="box box4 orange"></div>
+    <div class="box box5 green"></div>
+    <div class="box box6 red"></div>
+    <div class="box box7 yellow"></div>
+    <div class="box box8 green"></div>
+  </div>
+  <script src="bootstrap-5.3.6-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
